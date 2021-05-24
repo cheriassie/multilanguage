@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PODIUM | WELLA SALON</title>
+
+
+
+    <link rel="shortcut icon" type="image/svg" href="images/widgets/p_sign.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMK2T0EXHL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-CMK2T0EXHL');
+    </script>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+
+<body>
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <header class="header">
+        <div class="logo">
+            <a href="https://podiumsalon.cz">
+
+                <img src="images/widgets/logo.svg" alt="logo" id="logo-img">
+
+
+            </a>
+        </div>
+
+        <div class="nav">
+            <a class="nav-link lang" key="reserve" target="_blank" rel="noopener noreferrer" href="https://n514582.yclients.com/company:486814">Rezervovat</a>
+            <a class="nav-link lang" key="about" href="index.html#about">O nás</a>
+            <a class="nav-link lang" key="services" href="index.html#services">Služby</a>
+            <a class="nav-link lang" key="contact" href="index.html#contacts">Kontakty</a>
+
+            <div class="dropdown">
+                <p class="dropdown-text">
+                    <span id="main-language">CZ</span>
+                    <i class="fas fa-chevron-down"></i>
+                </p>
+
+                <div class="dropdown-content">
+                    <button class="change-lang" onclick="changeURLLanguage('ru')">RU</button>
+                    <button class="change-lang" onclick="changeURLLanguage('cz')">CZ</button>
+                    <button class="change-lang" onclick="changeURLLanguage('en')">EN</button>
+                </div>
+            </div>
+
+        </div>
+        <a class="reserve lang" key="reserve" href="https://n514582.yclients.com/company:486814">Забронировать</a>
+        <div class="fas fa-bars mobile-bar" onclick="toggleModal()"></div>
+
+    </header>
+    <section class="hair-home container ">
+
+    </section>
+
+
+
+    <section class="home-about container section-padding" id="about">
+
+        <div class="section-top activeSection">
+            <h3 class="aboutThin lang" key="coloring"> Služby kadeřnické zóny</h3>
+            <p class="about-text lang" key="aboutcolor">Pracujeme s profesionálními barvami společnosti WELLA PROFESSIONAL, protože v této otázce pro nás neexistuje polovičaté řešení, pouze kvalita, pouze WELLA. V laboratoři barev PODIUM naleznete přes sto barevných odstínů odolné barvy KOLESTON
+                PERFECT ME+ a tónovací barvy COLOR TOUCH bez amoniaku. Mnozí velmi dobře vědí, jak těžké je dosáhnout vytoužené barvy vlasů, zvláště blondýnky o tom ví své. Právě proto naše blonďaté klientky velmi oceňují super lesklou řadu barev ILLUMINA.
+                A pro ideální zesvětlení specialisté používají nový BLONDORPLEX, který je na bázi tzv. plex technologie určené k ochraně vlasů během barvení.
+            </p>
+        </div>
+
+    </section>
+    <section class="container section-padding price-info">
+
+
+        <div class="color wrap ">
+            <div class="color-block">
+                <p class="lang" key="strih">Dámský střih</p>
+                <p class="lang" key="dur">60 min</p>
+            </div>
+
+            <div class="color-block">
+                <p>Top stylist 1000 CZK</p>
+                <p>Junior stylist 600 CZK</p>
+            </div>
+        </div>
+
+        <div class="color-desc ">
+            <p class="lang" key="desc1">Služba zahrnuje podrobnou konzultaci se specialistou, přípravu vlasů před stříháním, základní péči podle typu vlasů, stříhání a účes.</p>
+        </div>
+
+
+        <div class="color wrap ">
+            <div class="color-block">
+                <p class="lang" key="strih1">Panský střih</p>
+                <p class="lang" key="dur1">60 min</p>
+            </div>
+
+            <div class="color-block">
+                <p>Top stylist 800 CZK</p>
+                <p>Junior stylist 450 CZK</p>
+            </div>
+
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="desc2">Služba zahrnuje podrobnou konzultaci se specialistou, přípravu a mytí vlasů, stříhání, opakované mytí hlavy, foukání vlasů s přípravky pro styling vlasů nebo bez (v závislosti na typu vlasů).</p>
+        </div>
+        <div class="color wrap ">
+            <div class="color-block">
+                <p class="lang" key="strih2">Panský střih + úprava vousů</p>
+                <p class="lang" key="dur2">60 мин</p>
+            </div>
+
+            <div class="color-block">
+                <p>Top stylist 1000 CZK</p>
+                <p>Junior stylist 500 CZK</p>
+            </div>
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="desc3">Služba zahrnuje podrobnou konzultaci se specialistou, přípravu a mytí vlasů, stříhání, úpravu vousů, opakované mytí hlavy, foukání vlasů s přípravky pro styling vlasů nebo bez (v závislosti na typu vlasů).</p>
+        </div>
+        <div class="color wrap ">
+            <div class="color-block">
+                <p class="lang" key="strih3">Foukaná</p>
+                <p class="lang" key="dur3">60 мин</p>
+            </div>
+
+            <div class="color-block">
+                <p>Top stylist 800 CZK</p>
+                <p>Junior stylist 800 CZK</p>
+            </div>
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="desc4">Služba zahrnuje podrobnou konzultaci se specialistou, přípravu vlasů před účesem, základní péči podle typu vlasů, úpravu vlasů kartáčem nebo stylery (kulma, žehlička).</p>
+        </div>
+        <div class="color wrap ">
+            <div class="color-block">
+                <p class="lang" key="strih4">Jednotónové barvení nebo tónování</p>
+                <p class="lang" key="dur4">1,5-2 часа</p>
+            </div>
+
+            <div class="color-block">
+                <p>Top stylist 2500 CZK</p>
+                <p>Junior stylist 1900 CZK</p>
+
+            </div>
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="desc5">
+                Proces získání rovnoměrné barvy vlasů. Provádí se různými technikami s využitím jednoho odstínu nebo dvou pro plynulý přechod barev. V laboratoři barev PODIUM naleznete přes sto barevných odstínů odolné barvy KOLESTON PERFECT ME+, tónovací barvy COLOR
+                TOUCH bez amoniaku a moderních zářivých barviv ILLUMINA COLOR.</p>
+        </div>
+        <div class="color wrap ">
+            <div class="color-block">
+                <p class="lang" key="strih5">Komplexní barvení </p>
+                <p class="lang" key="dur5">3-4 часа</p>
+            </div>
+
+            <div class="color-block">
+                <p>Top stylist 3500 CZK</p>
+
+            </div>
+
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="desc6">Typ barvení se zesvětlováním, úplnou nebo částečnou změnou barvy. Můžete si vybrat moderní techniky barvení, jako jsou: shatush, balayage, highlights. Pro ideální zesvětlení používáme nový BLONDORPLEX, který obsahuje plex technologii na ochranu
+                vlasů během barvení.</p>
+        </div>
+        <div class="color wrap ">
+            <div class="color-block">
+                <p>AirTouch</p>
+                <p class="lang" key="dur6">4-5 часов</p>
+            </div>
+
+            <div class="color-block">
+                <p>Top stylist 4500 CZK</p>
+
+            </div>
+
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="desc7">Populární technika barvení, díky které Vaše vlasy získají jemný přechod barev. Jemné barvení, které nevyžaduje častou úpravu (4-6 měsíců). Tato technika barvení je vhodná absolutně pro všechny, jak pro světlovlásky, tak i tmavovlásky. </p>
+        </div>
+        <div class="color wrap ">
+            <div class="color-block">
+                <p class="lang" key="strih6">Procedura ozdravení vlasů WellaPlex </p>
+                <p class="lang" key="dur7">90 мин</p>
+            </div>
+
+            <div class="color-block">
+                <p>Junior stylist 1200 CZK</p>
+
+            </div>
+
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="desc8">Ošetření sérem a maskou WellaPlex. Jejich složení na molekulární úrovni proniká hluboko do vlasů a obnovuje keratinové vazby. Služba zahrnuje konzultaci, mytí hlavy, nanesení séra WellaPlex N.1 elixírové ochrany, nanesení masky WellaPlex N.
+                2 elixírového stabilizátoru a klasický účes.
+            </p>
+        </div>
+        <div class="color wrap ">
+            <div class="color-block">
+                <p class="lang" key="strih7">Laminování vlasů s produkty Sebastian Cellophanes </p>
+                <p class="lang" key="dur8">1,5-2 часа</p>
+            </div>
+
+            <div class="color-block test">
+                <p>Junior stylist 1500 CZK</p>
+
+            </div>
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="desc9">Sebastian Cellophanes je speciální technologie, která umožňuje efektivní péči o vlasy barvené, bez života, suché a matné. Prostředek napomáhá kvalitní bílkovinové obnově vlasů a má hluboký kondicionační účinek. Přípravek obsahuje rostlinné
+                bílkoviny a biologicky aktivní látky. Můžete si vybrat čisté složení bez barvy, stejně jako složení s lehkým odstínem.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="instagram">
+        <a class="insta-logo" href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer">
+            <img src="images/widgets/logo.svg" alt="logo">
+            <div class="logo-inner"></div>
+
+        </a>
+        <a class="insta-desc" href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer">
+            <p>@podium_wellasalon_prague</p>
+            <p>Beauty Salon</p>
+            <p>Prague</p>
+
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" class="follow" target="_blank" rel="noopener noreferrer">
+            <p class="lang" key="follow">Follow Us</p>
+        </a>
+
+    </section>
+    <div class="insta-feed container">
+
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_1" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_2" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_3" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_4" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_5" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_6" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_7" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_8" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_9" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_10" alt="">
+            <div class="inner"></div>
+        </a>
+
+    </div>
+
+    <div class="swiper-container mySwiper slide-container  ">
+        <div class="swiper-wrapper all-slides">
+            <div class="swiper-slide"><img src="images/insta/insta_1" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_2" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_3" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_4" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_5" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_6" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_7" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_8" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_9" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_10" alt=""></div>
+        </div>
+
+        <button class="dest next" onclick="nextPrevSlide(+1)">></button>
+        <button class="dest prev" onclick="nextPrevSlide(-1)"><</button>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+    <footer class="footer ">
+
+        <p>©2021 ROYAL COURT, S.R.O. IČO 03621553 - ALL RIGHTS RESERVED.</p>
+
+        <div class="footer-link">
+            <p>Created by A.M studio</p>
+        </div>
+
+    </footer>
+
+    <div class="mobile-nav ">
+        <div class="mobile-content ">
+            <a href="# " class="logo-mobile nav-link "> <img src="images/widgets/logo.svg" class="logo-mobile nav-link " alt=""></a>
+            <a class="nav-link lang " key="about" href="https://podiumsalon.cz">О нас</a>
+            <a class="nav-link lang " key="service" href="https://podiumsalon.cz">Услуги</a>
+            <a class="nav-link lang " key="contact" href="https://podiumsalon.cz">Контакты</a>
+
+            <div class="lang-row ">
+                <button class="lang-mobile translate " id="ru">RU</button>
+                <button class="lang-mobile translate " id="cz">CZ</button>
+                <button class="lang-mobile translate " id="en">EN</button>
+            </div>
+            <button class="close-btn " onclick="toggleModal() ">
+                <i class="fas fa-times "></i>
+            </button>
+        </div>
+    </div>
+
+    <style>
+        @font-face {
+            font-family: 'synerga_pro_regular';
+            src: url('Fonts/SynergaPro-Regular.woff2') format('WOFF2'), url('Fonts/SynergaPro-Regular.woff') format('WOFF');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        p,
+        .nav-link {
+            font-family: 'synerga_pro_regular';
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Roboto Slab', serif;
+        }
+    </style>
+
+    <script src="js/scroll.js "></script>
+    <script src="js/modal.js "></script>
+    <script src="js/lang.js "></script>
+    <script src="js/translate.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script type="text/javascript" src="https://w522587.yclients.com/widgetJS" charset="UTF-8"></script>
+    <script>
+        var yWidgetSettings = {
+            buttonColor: '#333',
+            buttonPosition: 'bottom right',
+            buttonAutoShow: true,
+            buttonText: 'Rezervovat Online',
+            formPosition: 'right'
+        };
+    </script>
+    <script type="text/javascript">
+        setTimeout(function() {
+            $('.loader').fadeToggle();
+        }, 1500);
+    </script>
+</body>
+
+</html>

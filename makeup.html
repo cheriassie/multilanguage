@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PODIUM | WELLA SALON</title>
+    <link rel="shortcut icon" type="image/svg" href="images/widgets/p_sign.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMK2T0EXHL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-CMK2T0EXHL');
+    </script>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <a href="https://podiumsalon.cz">
+                <img src="images/widgets/logo.svg" alt="logo" id="logo-img">
+            </a>
+        </div>
+
+        <div class="nav">
+            <a class="nav-link lang " key="reserve" target="_blank" rel="noopener noreferrer" href="https://n514582.yclients.com/company:486814">Rezervovat</a>
+            <a class="nav-link lang " key="about" href="index.html#about">O nás</a>
+            <a class="nav-link lang " key="services" href="index.html#services">Služby</a>
+            <a class="nav-link lang" key="contact" href="index.html#contacts">Kontakty</a>
+
+            <div class="dropdown">
+                <p class="dropdown-text">
+                    <span id="main-language">CZ</span>
+                    <i class="fas fa-chevron-down"></i>
+                </p>
+
+                <div class="dropdown-content">
+                    <button class="change-lang translate" id="ru">RU</button>
+                    <button class="change-lang translate" id="cz">CZ</button>
+                    <button class="change-lang translate" id="en">EN</button>
+                </div>
+            </div>
+
+        </div>
+        <a class="reserve lang" key="reserve" href="https://n514582.yclients.com/company:486814">Забронировать</a>
+        <div class="fas fa-bars mobile-bar" onclick="toggleModal()"></div>
+
+    </header>
+    <section class="makeup-home container ">
+
+    </section>
+
+
+
+    <section class="home-about container section-padding" id="about">
+
+        <div class="section-top activeSection">
+            <h3 class="aboutThin lang" key="visage">Služby zóny vizážistů</h3>
+            <p class="about-text lang" key="visageabout">Make-up je způsob života a vědomá volba ženy, stejná jako volba stylu oblečení na každý den. Právě proto se dnes make-up stal směrem, jedním z typů současného moderního umění. Zdůrazní přírodní krásu, navíc zcela dokáže změnit obvyklý vzhled.
+                Rafinovaný a rezervovaný make-up v jemných odstínech, odvážné kouřové líčení s třpytkami nebo klasika - výrazné rty a linky? Rádi s Vámi probereme a následně realizujeme jakékoliv, i ty nejodvážnější nápady. V zóně vizážistů také můžete
+                využít služeb vytvoření ideálního tvaru obočí, protože pečlivé a dobře upravené obočí je jednou z částí bezchybného vzhledu.
+            </p>
+        </div>
+
+    </section>
+    <section class="container section-padding price-info">
+
+
+        <div class="color wrap ">
+            <div class="color-block ">
+                <p class="lang" key="brow">Laminace obočí + úprava obočí</p>
+                <p class="lang" key="browtime">40 min</p>
+            </div>
+
+            <div class="color-block">
+                <p>600 CZK</p>
+
+            </div>
+        </div>
+
+        <div class="color-desc ">
+            <p class="lang" key="browtext">Laminování chloupků speciálními směsmi značky THUYA PROFESSIONAL. Laminace dělá chloupky „poddajnější“ a vizuálně jim přidává na objemu. Účinek této dlouhodobé úpravy vydrží čtyři až šest týdnů. Úprava obočí je tvarování do požadovaného tvaru
+                pomocí vosku ITALWAX a pinzety pro detailnější úpravu.</p>
+        </div>
+
+
+        <div class="color wrap ">
+            <div class="color-block ">
+                <p class="lang" key="brow1">Barvení barvou nebo hennou + úprava obočí</p>
+                <p class="lang" key="browtime1">40 мин</p>
+            </div>
+
+            <div class="color-block">
+                <p>600 CZK</p>
+
+            </div>
+
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="browtext1">Při barvení používáme barvu značky THUYA PROFESSIONAL k získání maximálně přírodní barvy obočí a lehkého tónu na kůži. Díky keratinu a arganovému oleji je dobře vyživuje a pečuje o chloupky. K barvení hennou je využíván produkt populární značky
+                BROWXENNA. Tento způsob barvení je vhodný pro milovníky jasných kontur a grafického obočí. Úprava obočí je tvarování do požadovaného tvaru pomocí vosku ITALWAX a pinzety pro detailnější úpravu.
+            </p>
+        </div>
+        <div class="color wrap ">
+            <div class="color-block">
+                <p class="lang" key="brow2">Laminace + barvení + úprava obočí</p>
+                <p class="lang" key="browtime2">60 мин</p>
+            </div>
+
+            <div class="color-block">
+                <p>800 CZK</p>
+
+            </div>
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="browtext2">Služba zahrnuje laminování chloupků speciálními směsmi značky THUYA PROFESSIONAL, barvení obočí barvou THUYA PROFESSIONAL nebo hennou BROWXENNA, úprava obočí je tvarování do požadovaného tvaru pomocí vosku ITALWAX a pinzety pro detailnější
+                úpravu.
+            </p>
+        </div>
+        <div class="color wrap ">
+            <div class="color-block ">
+                <p class="lang" key="brow3">Denní make-up</p>
+                <p class="lang" key="browtime3">40 мин</p>
+            </div>
+
+            <div class="color-block">
+                <p>990 CZK</p>
+
+            </div>
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="browtext3">Každodenní vzhled je představen nenápadnými tóny, které zdůrazňují vaši přirozenost a zakrývají nedostatky, čímž Vám dodávají atraktivní a dobře upravený vzhled.</p>
+        </div>
+        <div class="color wrap ">
+            <div class="color-block">
+                <p class="lang" key="brow4">Večerní make-up</p>
+                <p class="lang" key="browtime4">60 мин</p>
+            </div>
+
+            <div class="color-block">
+                <p>990 CZK</p>
+
+            </div>
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="browtext4">Jedná se o výraznější make-up, nejčastěji zvolený na večírek nebo slavnostní akci. Váš vzhled může být odvážný, nebo naopak něžný. Naši vizážisté vyberou kosmetiku s přihlédnutím ke všem vlastnostem vaší pokožky, aby byl Váš make-up po celý
+                večer ideální.
+            </p>
+        </div>
+        <div class="color wrap ">
+            <div class="color-block">
+                <p class="lang" key="brow5">Svatební make-up </p>
+                <p class="lang" key="browtime5">90 мин</p>
+            </div>
+
+            <div class="color-block">
+                <p>2100 CZK</p>
+
+            </div>
+
+        </div>
+        <div class="color-desc ">
+            <p class="lang" key="browtext5">Rádi vám pomůžeme vytvořit dokonalý svatební make-up, protože tento den by měl být nezapomenutelný, a Vy nejkrásnější. Svatební make-up musí zůstat bezchybný po celý den, ráno zdůrazňovat svěžest tváře a večer dodávat pokožce nádhernou záři.</p>
+        </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="instagram">
+        <a class="insta-logo" href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer">
+            <img src="images/widgets/logo.svg" alt="logo">
+            <div class="logo-inner"></div>
+
+        </a>
+        <a class="insta-desc" href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer">
+            <p>@podium_wellasalon_prague</p>
+            <p>Beauty Salon</p>
+            <p>Prague</p>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="follow">
+            <p class="lang" key="follow">Follow Us</p>
+        </a>
+
+    </section>
+    <div class="insta-feed container">
+
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_make_1" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_make_2" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_make_3" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_make_4" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_make_5" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_make_6" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_make_7" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_make_8" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_make_9" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_make_10" alt="">
+            <div class="inner"></div>
+        </a>
+
+    </div>
+
+
+    <div class="swiper-container mySwiper slide-container ">
+        <div class="swiper-wrapper all-slides">
+            <div class="swiper-slide"><img src="images/insta/insta_make_1" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_make_2" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_make_3" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_make_4" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_make_5" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_make_6" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_make_7" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_make_8" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_make_9" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_make_10" alt=""></div>
+        </div>
+
+        <button class="dest next" onclick="nextPrevSlide(+1)">></button>
+        <button class="dest prev" onclick="nextPrevSlide(-1)"><</button>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+
+
+    <footer class="footer ">
+
+        <p>©2021 ROYAL COURT, S.R.O. IČO 03621553 - ALL RIGHTS RESERVED.</p>
+
+        <div class="footer-link">
+            <p>Created by A.M studio</p>
+        </div>
+
+    </footer>
+
+    <div class="mobile-nav ">
+        <div class="mobile-content ">
+            <a href="# " class="logo-mobile nav-link "> <img src="images/widgets/logo.svg" class="logo-mobile nav-link " alt=""></a>
+            <a class="nav-link lang " key="about" href="https://podiumsalon.cz">О нас</a>
+            <a class="nav-link lang " key="service" href="https://podiumsalon.cz">Услуги</a>
+            <a class="nav-link lang " key="contact" href="https://podiumsalon.cz">Контакты</a>
+
+            <div class="lang-row ">
+                <button class="lang-mobile translate " id="ru">RU</button>
+                <button class="lang-mobile translate " id="cz">CZ</button>
+                <button class="lang-mobile translate " id="en">EN</button>
+            </div>
+            <button class="close-btn " onclick="toggleModal() ">
+                <i class="fas fa-times "></i>
+            </button>
+        </div>
+    </div>
+
+    <style>
+        @font-face {
+            font-family: 'synerga_pro_regular';
+            src: url('Fonts/SynergaPro-Regular.woff2') format('WOFF2'), url('Fonts/SynergaPro-Regular.woff') format('WOFF');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        p,
+        .nav-link {
+            font-family: 'synerga_pro_regular';
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Roboto Slab', serif;
+        }
+    </style>
+
+
+    <script src="js/scroll.js "></script>
+    <script src="js/modal.js "></script>
+    <script src="js/lang.js "></script>
+    <script src="js/translate.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script type="text/javascript" src="https://w522587.yclients.com/widgetJS" charset="UTF-8"></script>
+    <script>
+        var yWidgetSettings = {
+            buttonColor: '#333',
+            buttonPosition: 'bottom right',
+            buttonAutoShow: true,
+            buttonText: 'Rezervovat Online',
+            formPosition: 'right'
+        };
+    </script>
+    <script type="text/javascript">
+        setTimeout(function() {
+            $('.loader').fadeToggle();
+        }, 1500);
+    </script>
+</body>
+
+</html>

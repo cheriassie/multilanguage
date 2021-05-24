@@ -1,0 +1,163 @@
+.color {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 3% 10% 1%;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding-right: 2%;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+}
+
+.color-desc {
+    margin: 2% 10% 2%;
+    text-align: left;
+}
+
+.color-desc>p {
+    line-height: 1.5;
+}
+
+.main-home {
+    text-align: center;
+}
+
+
+/* .color-span {
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 2%;
+}
+
+.price-span {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.color-right {
+    text-align: right;
+}
+
+.color-left {
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 2%;
+}
+
+.color-right {
+    font-family: 'Roboto Slab', serif;
+} */
+
+.price-info {
+    margin-bottom: 2%;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.color-block {
+    width: 100%;
+    text-align: end;
+    margin-bottom: 2%;
+}
+
+.color-block>p {
+    font-family: 'Roboto Slab', serif;
+    padding-top: 2%;
+}
+
+.color-block:first-child {
+    text-align: left;
+    width: 45%;
+}
+
+.color-block:last-child {
+    text-align: right;
+    width: 45%;
+}
+
+.fa-circle {
+    padding-right: 10px;
+    font-size: 3px;
+}
+
+
+/* .cosmetic-block {
+    width: 50%;
+    text-align: left;
+} */
+
+.cosmetic-price {
+    width: fit-content;
+    text-align: left;
+}
+
+.mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cosmetic-block>p {
+    font-family: 'synerga_pro_regular';
+}
+
+.cosmetic-left>p {
+    text-align: right;
+}
+
+.cosmetic-right {
+    text-align: right;
+}
+
+.photo>p {
+    text-align: left;
+}
+
+.photo {
+    width: 80%;
+    margin-right: 10%;
+}
+
+.cosmetic-block {
+    text-align: left;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 13%;
+}
+
+.lucky {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reservePrice {
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 0.5px solid;
+    padding: 13px 15px 13px;
+    background-color: #333;
+    text-align: justify;
+    box-shadow: black;
+}
+
+.PriceReserve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-bottom: 5%;
+    margin-top: 4%;
+}

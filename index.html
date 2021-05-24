@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title> PODIUM | WELLA SALON</title>
+
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="google-site-verification" content="zYwIWNxyCs9sj4Nz15TgDPj3u9WkD3Zqg3gZrc9tbQw" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMK2T0EXHL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-CMK2T0EXHL');
+    </script>
+
+    <link rel="stylesheet" href="css/all.css">
+
+
+</head>
+
+
+<body>
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- ***************** HEADER ******************* -->
+
+    <header class="header">
+        <div class="logo" onclick="reload()">
+            <img src="images/widgets/logo.svg" width="120px" height="130px" alt="logo" id="logo-img">
+        </div>
+
+        <div class="nav">
+            <a class="nav-link lang" key="reserve" href="https://n514582.yclients.com/company:486814">Rezervovat</a>
+            <a class="nav-link lang scroll " key="about" href="#about">O nás</a>
+            <a class="nav-link lang scroll" key="services" href="#services">Služby</a>
+            <a class="nav-link lang scroll" key="contact" href="#contacts">Kontakty</a>
+
+
+            <div class="dropdown">
+                <p class="dropdown-text">
+                    <span class="cz-btn" id="main-language">CZ</span>
+                    <i class="fas fa-chevron-down"></i>
+                </p>
+
+                <div class="dropdown-content">
+
+                    <button class="change-lang translate" onclick="changeURLLanguage('ru')" id="ru">RU</button>
+                    <button class="change-lang translate" onclick="changeURLLanguage('cz')" id="cz">CZ</button>
+                    <button class="change-lang translate" onclick="changeURLLanguage('en')" id="en">EN</button>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <a class="reserve lang" key="reserve" target="_blank" rel="noopener noreferrer" href="https://n514582.yclients.com/company:486814">REZERVACE</a>
+
+        <div class="fas fa-bars mobile-bar" onclick="toggleModal()"></div>
+
+    </header>
+
+    <!-- ***************** HOME******************* -->
+    <section class="main-home ">
+        <a href="#about" class="home-link scroll">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+
+        <div class="home-block">
+            <h4>"It's all about good taste."</h4>
+            <p>Giorgio Armani</p>
+        </div>
+    </section>
+    <!-- ***************** ABOUT ******************* -->
+    <section class="home-about container section-padding" id="about">
+
+        <div class="section-top activeSection">
+            <h3 class="lang" key="about">О нас</h3>
+            <p class="lang about-text" key="about1"> Mezinárodní tým specialistů na Vaši krásu Podium | Wella Salon poskytuje kompletní nabídku služeb, které souvisí s módním průmyslem a vnějším zdravím. Profesionalismus expertů Podium|Wella Salon našemu týmu umožňuje dynamický rozvoj v této
+                oblasti a sledování nových technologií a produktů průmyslu. V Podium | Wella Salon máme několik směrů, proto je koncepce salonu založena na možnosti rozdělení na speciální zóny vybavené nejnovějšími technologiemi. Tato možnost našim specialistům
+                vytváří podmínky pro úplné ponoření se do práce s klientem, což zajišťuje také komfortní podmínky pro komunikaci. Kadeřnická zóna je místo, kde se rodí móda. Analyzujeme zde Váš vzhled, měníme image a zdůrazňujeme Vaši přírodní krásu.
+                U nás se budete cítit uvolněně a příjemně. Nebudeme Vám vnucovat poslední trendy, jelikož hlavní úspěch specialisty spočívá v tom, aby klient odešel šťastný a spokojený se svým novým vzhledem
+                <p class="lang about-text" key="about2">Kadeřnická zóna je místo, kde se rodí móda. Analyzujeme zde Váš vzhled, měníme image a zdůrazňujeme Vaši přírodní krásu. U nás se budete cítit uvolněně a příjemně. Nebudeme Vám vnucovat poslední trendy, jelikož hlavní úspěch specialisty
+                    spočívá v tom, aby klient odešel šťastný a spokojený se svým novým vzhledem.</p>
+                <p class="lang about-text" key="about3">Zóna vizážistů je naplněna novými styly a slovo dokonalost tady získává nový rozměr. Ve světě reflektorů a blesků fotoaparátů budete bezchybní. Není vůbec důležité, jaké máte na večer plány. Možná zůstanete skromní a zvolíte jemné „nude“
+                    líčení nebo Vás čekají ambiciózní plány sexuálního a vášnivého vzhledu a sáhnete po kouřovém líčení. Make-up v každém případě vydrží na Vašem obličeji až do samotného rána.
+                </p>
+                <p class="lang about-text" key="about4">Technické vybavení zóny estetické medicíny nedovolí provedení špatných procedur z minulého století, ale naopak ochrání zdraví a bezpečnost Vaší kůže, jelikož budou využity moderní technologie. Díky nám se zbavíte nahromaděného stresu ve
+                    Vašem obličeji, zastavíme čas a věnujeme Vám dodatečné hodiny relaxace a klidu ve Vašem životě. </p>
+                <p class="lang about-text" key="about5">V zóně určené pro manikúru se kreativní výtvory a ideální nehty již dávno staly realitou a součástí našeho života. V nejkrásnější části salonu PODIUM Vás čeká opravdový umělec a Vaše ruce budou jeho plátnem.</p>
+
+            </p>
+
+        </div>
+
+
+
+    </section>
+    <!-- ***************** SERVICE ******************* -->
+
+    <section class="section-padding container" id="services">
+
+        <div class="section-top article-top">
+            <h3 class="offer lang" key="offerText">Naše služby
+            </h3>
+        </div>
+
+        <div class="wrap">
+
+            <a href="pricelist.html" class="template-item"><img src="images/services/small_hair.jpg" alt="">
+                <p class="text lang" key="color">Kadeřnická zóna</p>
+                <p class="change lang " key="butn1">Сeník</p>
+
+            </a>
+
+            <a href="GNailbar.html" class="template-item">
+                <img src="images/services/small_nail.jpg" alt="">
+                <p class="text lang " key="manicure">Zóna «G» Nail bar</p>
+                <p class="change lang" key="butn1">Сeník</p>
+            </a>
+
+
+            <a href="makeup.html" class="template-item ">
+                <img src="images/services/small_makeup.jpg" alt="">
+                <p class="text lang" key="makeup">Zóna vizážistů</p>
+                <p class="change lang" key="butn1">Сeník</p>
+            </a>
+
+            <a href="cosmetics.html" class="template-item">
+                <img src="images/services/small_kosmetika.jpg" alt="">
+                <p class="text lang" key="cosmetics">Zóna Estetické Medicíny</p>
+                <p class="change lang" key="butn1">Сeník</p>
+            </a>
+
+
+
+
+
+        </div>
+
+    </section>
+
+    <div class="container section-padding">
+        <p class="lang quote" key="quote">Platíte jen tehdy, pokud jste spokojeni s našimi službami!</p>
+    </div>
+    <!-- ***************** CONTACT ******************* -->
+    <section class="section-about section-padding" id="contacts">
+
+        <div class="section-block">
+            <div class="partner-item"><img src="images/payment/apple_pay.svg" alt=""></div>
+            <div class="partner-item"><img src="images/payment/visa_pay.svg" alt=""></div>
+            <div class="partner-item"><img src="images/payment/masrecard_pay.svg" alt=""></div>
+            <div class="partner-item"><img src="images/payment/google_pay.svg" alt=""></div>
+            <div class="partner-item"><img src="images/payment/american_pay.svg" alt=""></div>
+            <div class="partner-item"><img src="images/payment/diners_pay.svg" alt=""> </div>
+        </div>
+        <div class="section-block">
+
+            <div class="contact-info">
+                <p>
+                    <a href="tel:+420 602 484 843 ">+420 602 484 843</a></p>
+
+                <p>
+                    <a href="mailto:vip@giorgiosalon.cz ">vip@podiumsalon.cz</a></p>
+                <p>
+                    <a class="lng-metro" href="# ">Metro I.P.Pavlova</a></p>
+                <p>
+                    <a href="https://goo.gl/maps/zJ9u3iFig1tbA5ez7 ">Rumunská 7, Praha 2</a></p>
+                <p>
+                    <a class="lng-hour" href="https://api.whatsapp.com/send?phone=420602484843 ">PON-NE 10.00-20.00</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***************** INSTAGRAM ******************* -->
+
+
+
+    <section class="instagram">
+        <a class="insta-logo" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/podium_wellasalon_prague/">
+            <img src="images/widgets/logo.svg" alt="logo">
+            <div class="logo-inner"></div>
+
+        </a>
+        <a class="insta-desc" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/podium_wellasalon_prague/">
+            <p>@podium_wellasalon_prague</p>
+            <p>Beauty Salon</p>
+            <p>Prague</p>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="follow">
+            <p class="lang" key="follow">Follow Us</p>
+        </a>
+
+    </section>
+    <div class="insta-feed container">
+
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_mix_1" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_mix_2" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_mix_3" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_mix_4" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_mix_5" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_mix_6" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_mix_7" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_mix_8" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_mix_9" alt="">
+            <div class="inner"></div>
+        </a>
+        <a href="https://www.instagram.com/podium_wellasalon_prague/" target="_blank" rel="noopener noreferrer" class="insta-photo">
+            <img class="insta-size" src="images/insta/insta_mix_10" alt="">
+            <div class="inner"></div>
+        </a>
+
+    </div>
+
+    <div class="swiper-container mySwiper slide-container ">
+        <div class="swiper-wrapper all-slides">
+            <div class="swiper-slide"><img src="images/insta/insta_mix_1" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_mix_2" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_mix_3" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_mix_4" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_mix_5" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_mix_6" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_mix_7" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_mix_8" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_mix_9" alt=""></div>
+            <div class="swiper-slide"><img src="images/insta/insta_mix_10" alt=""></div>
+        </div>
+        <button class="dest next" onclick="nextPrevSlide(+1)">></button>
+        <button class="dest prev" onclick="nextPrevSlide(-1)"><</button>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+
+    <section class="video">
+        <video autoplay muted loop id="vid" class="podium">
+            <source src="podium_video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- ***************** GOOGLE VIRTUAL TOUR ******************* -->
+
+    <!-- <section class="section-padding " id="contacts ">
+        <div class="tour ">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1619172237416!6m8!1m7!1sCAoSLEFGMVFpcE9NOXBWczNWV0RTeWw5bzBCdmQ3Z0pOcGZtZkJOclZUalFIYV9j!2m2!1d50.073891673226!2d14.430761718968!3f312.57529081747447!4f-9.320591600844367!5f0.7820865974627469
+        " width="1440 "
+                height="400 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
+        </div>
+    </section> -->
+
+
+
+    <!-- ***************** PARTNERS ******************* -->
+
+    <div class="wrap partners container section-padding ">
+        <img src="images/widgets/sebastian.svg " alt=" ">
+        <img src="images/widgets/wella.svg " alt=" ">
+        <img src="images/widgets/systemprofessional.svg " alt=" ">
+        <img src="images/widgets/ghd_1.svg " alt=" ">
+        <img src="images/widgets/lpg.svg " alt=" ">
+        <img src="images/widgets/venus.svg " alt=" ">
+
+    </div>
+
+
+
+
+    <!-- ***************** FOOTER ******************* -->
+
+
+    <footer class="footer ">
+
+        <p>©2021 ROYAL COURT, S.R.O. IČO 03621553 - ALL RIGHTS RESERVED.</p>
+
+        <div class="footer-link">
+            <p>Created by A.M studio</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <!-- ***************** MOBILE NAVIGATION ******************* -->
+
+    <div class="mobile-nav ">
+        <div class="mobile-content ">
+            <a href="# " class="logo-mobile nav-link "> <img src="images/widgets/logo.svg" class="logo-mobile nav-link " alt=""></a>
+
+            <a class="nav-link lng-aboutmob " href="#about ">О нас</a>
+            <a class="nav-link lng-servicemob " href="#services ">Услуги</a>
+            <a class="nav-link lng-contactmob " href="#contacts ">Контакты</a>
+
+            <div class="lang-row ">
+                <button class="lang-mobile translate " id="ru">RU</button>
+                <button class="lang-mobile translate " id="cz">CZ</button>
+                <button class="lang-mobile translate " id="en">EN</button>
+            </div>
+            <button class="close-btn " onclick="toggleModal() ">
+                <i class="fas fa-times "></i>
+            </button>
+        </div>
+    </div>
+
+    <style>
+        @font-face {
+            font-family: 'synerga_pro_regular';
+            src: url('Fonts/SynergaPro-Regular.woff2') format('WOFF2'), url('Fonts/SynergaPro-Regular.woff') format('WOFF');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        p,
+        .nav-link {
+            font-family: 'synerga_pro_regular';
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Roboto Slab', serif;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        setTimeout(function() {
+            $('.loader').fadeToggle();
+        }, 1500);
+    </script>
+
+
+    <script src="js/scroll.js "></script>
+    <script src="js/modal.js "></script>
+
+    <script src="js/lang.js "></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/translate.js"></script>
+    <script type="text/javascript" src="https://w522587.yclients.com/widgetJS" charset="UTF-8"></script>
+    <script>
+        var yWidgetSettings = {
+            buttonColor: '#333',
+            buttonPosition: 'bottom right',
+            buttonAutoShow: true,
+            buttonText: 'Rezervovat Online',
+            formPosition: 'right'
+        };
+    </script>
+
+</body>
+
+</html>

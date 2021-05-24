@@ -1,0 +1,53 @@
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.section-top {
+    text-align: center;
+}
+
+.section-padding {
+    padding-top: 60px;
+}
+
+.section-top h3 {
+    color: #333;
+    font-size: 46px;
+    margin-bottom: 4%;
+}
+
+.section-top p {
+    font-size: 17px;
+    color: #333;
+    padding: 0 10%;
+    text-align: justify;
+}
+
+.price-content h4 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.price-content p {
+    font-size: 18px;
+    font-weight: 200;
+    padding: 10px 20%;
+}
+
+.review-pay {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.review-pay>h3 {
+    color: #333;
+    font-size: 46px;
+}
